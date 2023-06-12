@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="parent">
+        <form action="">
+            <table>
+                <tr>
+                    <td><label for="userName">Name</label></td>
+                    <td><input class="input-size" type="text" name="userName" id="userName"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><div class="error" id="userErrorMsg">error msg</div></td>
+                </tr>
+                <tr>
+                    <td><label for="mail">Email</label></td>
+                    <td><input class="input-size" type="email" name="mail" id="mail"></td>
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><div class="error" id="maileErrorMsg">error msg</div></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input class="input-size" type="password" name="password" id="password"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><div class="error" id="passErrorMsg">error msg</div></td>
+                </tr>
+                <tr>
+                    <td><label for="">Gender</label></td>
+                    <td>
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><div class="error" id="genderErrorMsg">error msg</div></td>
+                </tr>
+                <tr>
+                    <td><label for="">Sports</label></td>
+                    <td>
+                        <input type="checkbox" name="sport" id="tennis" value="tennis">
+                        <label for="tennis">Tennis</label>
+                        <input type="checkbox" name="sport" id="running" value="running">
+                        <label for="running">Running</label>
+                        <input type="checkbox" name="sport" id="football" value="football">
+                        <label for="football">Football</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><div class="error" id="sportsErrorMsg">error msg</div></td>
+                </tr>
+                <tr>
+                    <td><label for="country">Country</label></td>
+                    <td>
+                        <select class="input-size" name="country-select" id="countrySelector">
+                            <option value disabled selected hidden>Choose country</option>
+                            <option value="egypt">Egypt</option>
+                            <option value="korea">South Korea</option>
+                            <option value="japan">Japan</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><div class="error" id="countryErrorMsg">error msg</div></td>
+                </tr>
+            </table>
+            <div class="Btn-container">
+                <button class="btn sub-btn" id="submitBtn" type="button" >Submit</button>
+                <button class="btn res-btn" id="resetBtn" type="reset">Reset</button>
+            </div>
+            <!-- <div class="error" id="errorMsg">
+                
+            </div> -->
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
